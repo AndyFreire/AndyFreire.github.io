@@ -1,40 +1,42 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
 
-    <title>About Me</title>
-    <link rel="stylesheet" href="css/style.css">
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
-    <header class='masthead'>
-        <p class='masthead-intro'>Hi I'm</p>
-        <h1 class='masthead-heading'>Andrew Freire</h1>
-    </header>
-    <section class="details">
-      <h1>Introduction</h1>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+
+  <div class="container">
+
+    <section id="main-bio">
+
+      <h2>Andrew Freire</h2>
+
+      <img id="bio-image" src="profilepic.jpg" alt="Your Name">
+
       <p>Andrew Freire is a Product Manager and UI/UX Designer at KIS Technologies. He has over six years of experience working for enterprise companies and start-ups.</p>
-      <h1>Where I'm From</h1>
-      <p>Long Beach CA</p>
-      <h1>What are your favorite hobbies?</h1>
-      <p>Design, coding, and cooking</p>
-      <h1>What's your dream job?</h1>
-      <p>Director of Product</p>
-      <h1>Where do you live?</h1>
-      <p>Currently residing in Texas</p>
-      <h1>Why do you want to be a web developer?</h1>
-      <p>To make awesome apps</p>
     </section>
 
-    <footer id="footer">
-        <ul class="social">
-          <li><a href="http://www.github.com/AndyFreire">Github</a></li>
-        </ul>
-    </footer>
+    <section id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto: andrew.m.freire@gmail.com">andrew.m.freire@gmail.com</a></li>
+        <li><strong>Github:</strong> <a target="_blank" href="https://github.com/AndyFreire">https://github.com/AndyFreire</a></li>
+        <li><strong>Portfolio:</strong> <a target="_blank" href="https://andrewfreire.com/">https://andrewfreire.com/</a></li>
+      </ul>
+    </section>
+  </div>
+
 </body>
 
 </html>
